@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Rota Rural Mercedes</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&display=swap" 
+    rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo2.png" class="imagem_h1" alt="logo Rota Rural Mercedes"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Compartilhe Seu Feedback</h2>
+            <p class="text-center mb-4">A sua opinião é muito importante para nós! Ajude-nos a melhorar a Rota Rural Mercedes preenchendo o formulário abaixo.</p>
+            
+            <!-- Feedback Form -->
+            <form>
+                <div class="mb-3">
+                    <label for="nomesobrenome" class="form-label">Nome e Sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" required placeholder="seuemail@dominio.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" id="telefone" class="form-control" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+
+                <!-- Rating -->
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Como você avalia nossa plataforma?</label>
+                    <div>
+                        <input type="radio" name="rating" value="1" id="rating-1" class="form-check-input" required>
+                        <label for="rating-1" class="form-check-label">1 - Muito ruim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" value="2" id="rating-2" class="form-check-input">
+                        <label for="rating-2" class="form-check-label">2 - Ruim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" value="3" id="rating-3" class="form-check-input">
+                        <label for="rating-3" class="form-check-label">3 - Regular</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" value="4" id="rating-4" class="form-check-input">
+                        <label for="rating-4" class="form-check-label">4 - Bom</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="rating" value="5" id="rating-5" class="form-check-input">
+                        <label for="rating-5" class="form-check-label">5 - Excelente</label>
+                    </div>
+                </div>
+
+                <!-- Contact Preference -->
+                <fieldset class="mb-3">
+                    <legend>Como prefere ser contatado?</legend>
+                    <div class="form-check">
+                        <input type="radio" name="contato" value="email" id="radio-email" class="form-check-input">
+                        <label for="radio-email" class="form-check-label">Email</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone" class="form-check-input">
+                        <label for="radio-telefone" class="form-check-label">Telefone</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" class="form-check-input" checked>
+                        <label for="radio-whatsapp" class="form-check-label">WhatsApp</label>
+                    </div>
+                </fieldset>
+
+                <!-- Newsletter Option -->
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="newsletters" checked>
+                    <label class="form-check-label" for="newsletters">Gostaria de receber nossas novidades por e-mail?</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-success">Enviar Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <img src="img/logo2.png" alt="Logo da Rota Rural Mercedes" class="mb-3">
+            <p>&copy; 2025 Rota Rural Mercedes | Desenvolvido por IFPR</p>
+            <p>Av. João XXIII, Mercedes - PR, Brasil | (45) 98840-0734</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

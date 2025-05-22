@@ -1,0 +1,178 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #ffffff;
+    --botao-verde: #a45720;
+    --rodape-fundo: #008000;
+    --botao-ativo:#d99457;
+    --botao-laranja: #005e11;
+    --cor-de-fundo: #ffffffa2;
+    --preto-escuro: #000000;
+    --botao-azul-efeito: #000000; 
+    --fonte-principal: 'Inter';
+    
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 20;
+}
+
+.principal {
+    background-image: url("img/CAMPAGRO.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-verde);
+    border-radius: 10px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 15px;
+    color: var(--branco-principal);
+}
+
+.container__titulo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 100%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 775;
+    font-size: 48px;
+    color: var(--botao-laranja);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--preto-escuro);
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.secundario__botao {
+    background-color: var(--botao-verde);
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+.produtos_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:5em 0;
+}
+.produtos {
+    text-align: center;
+    color: var(--preto-escuro);
+}
+.produtos_titulo {
+   font-size: 20px;
+   color: var(--preto-escuro);
+}
+
+.lista_item{
+    font-size: 20px; 
+}
+
+.lista_link{
+    color: var(--preto-escuro);
+    margin-left: 2em;
+    text-decoration: none;
+}
+.rodape_lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 1em;
+}
+   
+.rodape{
+    text-align: center;
+	background: url("img/rodape-fundo.png");
+	padding: 40px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.rodape_texto{
+    background-color: var(--rodape-fundo);
+    color: var(--preto-escuro);
+    font-size: 14px;
+    margin: 2em 0;
+}
+.lista_link a:hover {
+    color: var(--botao-ativo);
+}
+.lista_link a:active {
+color: rgb(red, green, blue) (51, 128, 0); 
+}
+.container_botao:hover{
+    background-color: var(--preto-escuro);
+    color: var(--rodape-fundo);
+}
+.carrossel__texto {
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: var(--botao-verde);
+    text-align: center;
+}
+
+

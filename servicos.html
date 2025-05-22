@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços - Rota Rural Mercedes</title>
+
+  <!-- Fontes e Estilos -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1><img src="img/logo2.png" class="imagem_h1" alt="Logo Rota Rural Mercedes" /></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Tópico: Tudo -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Tudo</h2>
+      <p class="descricao__texto">Descubra tudo o que a Rota Rural Mercedes tem a oferecer, unindo cultura, lazer, comércio e gastronomia em um só lugar.</p>
+    </div>
+    <img src="img/tudo.jpg" alt="Tudo sobre a Rota Rural" class="secundario__imagem" />
+  </section>
+
+  <!-- Tópico: Lazer -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Lazer</h2>
+      <p class="descricao__texto">Explore espaços verdes, parques e ambientes ideais para relaxar com a família e amigos.</p>
+      <a href="lazer.html" class="botao">Ver mais</a>
+    </div>
+    <img src="img/lazer.jpg" alt="Parques e lazer" class="secundario__imagem" />
+  </section>
+
+  <!-- Tópico: Igrejas -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Igrejas</h2>
+      <p class="descricao__texto">Descubra as igrejas e capelas históricas da zona rural, marcos religiosos e culturais da comunidade.</p>
+      <a href="igreja.html" class="botao">Ver mais</a>
+    </div>
+    <img src="img/igreja.jpg" alt="Igrejas na zona rural" class="secundario__imagem" />
+  </section>
+
+  <!-- Tópico: Comércio -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Comércio</h2>
+      <p class="descricao__texto">Conheça os principais comércios locais da zona rural e fortaleça a economia da região.</p>
+      <a href="comercio.html" class="botao">Ver mais</a>
+    </div>
+    <img src="img/comercio.jpg" alt="Comércio local" class="secundario__imagem" />
+  </section>
+
+  <!-- Tópico: Lanchonetes -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Lanchonetes</h2>
+      <p class="descricao__texto">Saboreie delícias caseiras feitas com ingredientes frescos da própria região.</p>
+      <a href="lanchonete.html" class="botao">Ver mais</a>
+    </div>
+    <img src="img/lanchonete.jpg" alt="Lanches e comidas típicas" class="secundario__imagem" />
+  </section>
+
+  <!-- Tópico: Pontos Turísticos -->
+  <section class="container secundario">
+    <div class="container__descricao">
+      <h2 class="descricao__titulo">Pontos Turísticos</h2>
+      <p class="descricao__texto">Visite os principais atrativos naturais e culturais que fazem de Mercedes um lugar único.</p>
+    </div>
+    <img src="img/turismo.jpg" alt="Pontos turísticos" class="secundario__imagem" />
+  </section>
+
+  <!-- Carrossel de locais -->
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Locais em destaque</h2>
+    <p class="descricao__carrossel">Veja alguns dos locais mais visitados na Rota Rural Mercedes</p>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/1.png" alt="Local 1" />Parque Arroio Guaçu</div>
+          <div class="swiper-slide"><img src="img/2.png" alt="Local 2" />Feira do Produtor</div>
+          <div class="swiper-slide"><img src="img/3.png" alt="Local 3" />Sítio do Zé</div>
+          <div class="swiper-slide"><img src="img/4.png" alt="Local 4" />Lanchonete Rural</div>
+          <div class="swiper-slide"><img src="img/5.png" alt="Local 5" />Mirante das Palmeiras</div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <img src="img/logo2.png" alt="Logo Rota Rural Mercedes" />
+    <p class="copyright">&copy; 2025 Rota Rural Mercedes - Desenvolvido por IFPR</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Estilo dos botões -->
+  <style>
+    .botao {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #558b2f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #33691e;
+    }
+  </style>
+</body>
+</html>
